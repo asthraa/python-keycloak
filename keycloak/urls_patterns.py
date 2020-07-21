@@ -22,6 +22,7 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # OPENID URLS
+URL_REALM = "realms/{realm-name}"
 URL_WELL_KNOWN = "realms/{realm-name}/.well-known/openid-configuration"
 URL_TOKEN = "realms/{realm-name}/protocol/openid-connect/token"
 URL_USERINFO = "realms/{realm-name}/protocol/openid-connect/userinfo"
@@ -42,6 +43,8 @@ URL_ADMIN_RESET_PASSWORD = "admin/realms/{realm-name}/users/{id}/reset-password"
 URL_ADMIN_GET_SESSIONS = "admin/realms/{realm-name}/users/{id}/sessions"
 URL_ADMIN_USER_CLIENT_ROLES = "admin/realms/{realm-name}/users/{id}/role-mappings/clients/{client-id}"
 URL_ADMIN_USER_REALM_ROLES = "admin/realms/{realm-name}/users/{id}/role-mappings/realm"
+URL_ADMIN_GROUPS_REALM_ROLES = "admin/realms/{realm-name}/groups/{id}/role-mappings/realm"
+URL_ADMIN_GET_GROUPS_REALM_ROLES = "admin/realms/{realm-name}/groups/{id}/role-mappings"
 URL_ADMIN_USER_CLIENT_ROLES_AVAILABLE = "admin/realms/{realm-name}/users/{id}/role-mappings/clients/{client-id}/available"
 URL_ADMIN_USER_CLIENT_ROLES_COMPOSITE = "admin/realms/{realm-name}/users/{id}/role-mappings/clients/{client-id}/composite"
 URL_ADMIN_USER_GROUP = "admin/realms/{realm-name}/users/{id}/groups/{group-id}"
@@ -72,7 +75,14 @@ URL_ADMIN_CLIENT_SCOPES_ADD_MAPPER = URL_ADMIN_CLIENT_SCOPE + "/protocol-mappers
 
 URL_ADMIN_REALM_ROLES = "admin/realms/{realm-name}/roles"
 URL_ADMIN_REALMS = "admin/realms"
+URL_ADMIN_REALM = "admin/realms/{realm-name}"
 URL_ADMIN_IDPS = "admin/realms/{realm-name}/identity-provider/instances"
+URL_ADMIN_REALM_ROLES_ROLE_BY_NAME = "admin/realms/{realm-name}/roles/{role-name}"
+
 
 URL_ADMIN_FLOWS = "admin/realms/{realm-name}/authentication/flows"
 URL_ADMIN_FLOWS_EXECUTIONS = "admin/realms/{realm-name}/authentication/flows/{flow-alias}/executions"
+
+URL_ADMIN_COMPONENTS = "admin/realms/{realm-name}/components"
+URL_ADMIN_COMPONENT = "admin/realms/{realm-name}/components/{component-id}"
+URL_ADMIN_KEYS = "admin/realms/{realm-name}/keys"
